@@ -29,7 +29,7 @@
     <groupId>com.singhpora.microservicestoolchain.samples</groupId>
     <artifactId>EmpService</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>WSO2 MSF4J Microservice</name>
+    <name>Sample WSO2 MSF4J Microservice</name>
 
 
     <dependencies>
