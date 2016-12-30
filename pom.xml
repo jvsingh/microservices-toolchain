@@ -22,6 +22,6 @@
         </contributor>
     </contributors>   
   <modules>
-    <module>EmpService</module>
+    <module>Samples/EmpService</module>
   </modules>
 </project>

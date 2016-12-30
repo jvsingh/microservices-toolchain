@@ -1,5 +1,4 @@
 /*
- * Copyright (c) 2016, WSO2 Inc. (http://wso2.com) All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,10 +22,10 @@ import org.wso2.msf4j.MicroservicesRunner;
  *
  * @since 1.0.0-SNAPSHOT
  */
-public class Application {
+public class MicroApp {
     public static void main(String[] args) {
         new MicroservicesRunner()
-                .deploy(new EmpService())
+                .deploy(new EmpMicroService())
                 .start();
     }
 }

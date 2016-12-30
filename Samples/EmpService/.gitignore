@@ -1,0 +1,10 @@
+/target/
+
+
+#eclipse
+/.settings/
+.project
+
+#ms4j
+.classpath
+/dependency-reduced-pom.xml
