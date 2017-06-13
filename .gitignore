@@ -1,2 +1,4 @@
 /Java/
 **/target/
+**/.tmp/
+**/.metadata/
