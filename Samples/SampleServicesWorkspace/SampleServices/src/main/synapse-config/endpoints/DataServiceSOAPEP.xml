@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="DataServiceSOAPEP" xmlns="http://ws.apache.org/ns/synapse">
+    <wsdl port="SOAP12Endpoint" service="DOCTORS_DataService" uri="http://localhost:8280/services/DOCTORS_DataService.SOAP12Endpoint?wsdl">
+        <timeout>
+            <duration>45</duration>
+            <responseAction>fault</responseAction>
+        </timeout>
+    </wsdl>
+</endpoint>

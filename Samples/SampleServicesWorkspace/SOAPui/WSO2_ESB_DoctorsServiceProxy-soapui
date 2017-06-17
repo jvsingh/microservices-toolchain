@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:doc="http://www.singhpora.com/DoctorsService/">
+   <soap:Header/>
+   <soap:Body>
+     <dat:_get_getdoctors xmlns:dat="http://ws.wso2.org/dataservice1">
+         <dat:SPECIALITY>surgery</dat:SPECIALITY>
+      </dat:_get_getdoctors>
+   </soap:Body>
+</soap:Envelope>
