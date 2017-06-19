@@ -8,7 +8,7 @@
             <log description="DoctorsServiceProxy-LogRequest" level="custom">
                 <property expression="/" name="input_request"/>
             </log>
-            <xslt description="XFormRequest" key="conf:myresources/NewResource.xsl"/>
+            <xslt description="XFormRequest" key="conf:myresources/RequestTransformation.xslt"/>
         </inSequence>
         <outSequence>
             <log description="response log">

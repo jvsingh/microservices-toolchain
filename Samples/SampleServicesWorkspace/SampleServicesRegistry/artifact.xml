@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="NewResource" groupId="com.example.SampleServicesRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
-        <item>
-            <file>NewResource.xsl</file>
-            <path>/_system/config/myresources</path>
-            <mediaType/>
-        </item>
-    </artifact>
-</artifacts>
+<?xml version="1.0" encoding="UTF-8"?><artifacts/>
