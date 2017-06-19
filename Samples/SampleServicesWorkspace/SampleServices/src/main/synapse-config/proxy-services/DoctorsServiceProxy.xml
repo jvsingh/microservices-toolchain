@@ -11,6 +11,7 @@
             <xslt description="XFormRequest" key="conf:myresources/RequestTransformation.xslt"/>
         </inSequence>
         <outSequence>
+            <xslt description="ResponseTransformation" key="conf:myresources/ResponseTransform.xslt"/>
             <log description="response log">
                 <property name="response" value="&quot;TEST2: response from data service&quot;"/>
             </log>
