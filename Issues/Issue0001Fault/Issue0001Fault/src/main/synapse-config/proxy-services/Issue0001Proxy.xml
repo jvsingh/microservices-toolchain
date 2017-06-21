@@ -6,8 +6,15 @@
         </endpoint>
         <inSequence/>
         <outSequence>
+            <log description="ResponseLog">
+                <property expression="/" name="response_log"/>
+            </log>
             <send/>
         </outSequence>
-        <faultSequence/>
+        <faultSequence>
+            <log category="ERROR" description="FaultLog">
+                <property name="fault_log" value="/"/>
+            </log>
+        </faultSequence>
     </target>
 </proxy>
