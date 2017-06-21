@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/Issue0002TestAPI" name="Issue0002TestAPI" port="9" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence/>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

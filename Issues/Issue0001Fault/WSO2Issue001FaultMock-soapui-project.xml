@@ -96,7 +96,7 @@
 </soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.singhpora.com/ItemsService/findItems"/></con:response><con:response name="SOAPFault" id="9db351fc-0822-43f7-ad6e-13e4016375f8" httpResponseStatus="500" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
    <soapenv:Body>
       <soapenv:Fault>
-         <faultcode></faultcode>
+         <faultcode>Server</faultcode>
          <faultstring>Random SOAPFault from backend server</faultstring>
       </soapenv:Fault>
    </soapenv:Body>
