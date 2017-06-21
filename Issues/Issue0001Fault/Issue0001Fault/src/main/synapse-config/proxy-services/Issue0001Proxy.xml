@@ -15,6 +15,7 @@
             <log category="ERROR" description="FaultLog">
                 <property name="fault_log" value="/"/>
             </log>
+            <send/>
         </faultSequence>
     </target>
 </proxy>
