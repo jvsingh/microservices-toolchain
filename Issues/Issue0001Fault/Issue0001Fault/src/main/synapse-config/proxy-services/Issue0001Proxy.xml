@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="Issue0001Proxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <endpoint name="endpoint_urn_uuid_452282e1-054b-4575-bc0c-a880a42e42ae">
+        <endpoint>
             <address uri="http://localhost:8088/mockItemsServiceSOAP?wsdl"/>
         </endpoint>
         <inSequence/>
@@ -12,9 +12,12 @@
             <send/>
         </outSequence>
         <faultSequence>
-            <log category="ERROR" description="FaultLog">
-                <property name="fault_log" value="/"/>
-            </log>
+            <makefault description="set-fault-response" version="soap11">
+                <code value="soap11Env:Client" xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"/>
+                <reason value="fault_string_from_proxy"/>
+                <role/>
+                <detail/>
+            </makefault>
             <send/>
         </faultSequence>
     </target>
