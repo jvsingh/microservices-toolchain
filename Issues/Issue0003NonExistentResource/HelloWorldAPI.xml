@@ -1,0 +1,23 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="HelloWorld" context="/helloworld">
+   <resource methods="POST" uri-template="/test">
+      <inSequence>
+         <payloadFactory media-type="json" description="set-response-payload">
+            <format> { "root":"mock" } </format>
+            <args/>
+         </payloadFactory>
+         <respond description="test echo"/>
+      </inSequence>
+      <outSequence>
+         <send description="respond"/>
+      </outSequence>
+      <faultSequence>
+         <makefault version="soap11">
+            <code xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/" value="soap11Env:Server"/>
+            <reason value="TEST_Configured_fault"/>
+            <role/>
+            <detail>Test Fault from API</detail>
+         </makefault>
+         <send/>
+      </faultSequence>
+   </resource>
+</api>
